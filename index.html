@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Program</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 100px;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>请输入你的名字：</h2>
+
+<input id="nameInput" placeholder="你的名字">
+
+<br><br>
+
+<button onclick="showText()">点我</button>
+
+<h3 id="result"></h3>
+
+<script>
+
+function showText() {
+
+    let name = document.getElementById("nameInput").value;
+
+    document.getElementById("result").innerText =
+    "我是你爹 " + name;
+
+}
+
+</script>
+
+</body>
+</html>
